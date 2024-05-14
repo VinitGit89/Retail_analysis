@@ -1,13 +1,12 @@
 pipeline {
-agent any
-stages {
-stage('Build') {
-steps {
-echo "build completed successful"
+    agent any
 
-}
-
-}
+    stages {
+        stage('Build') {
+            steps {
+                echo "build completed successful"
+            }
+    }
 
 stage('Test') {
 steps {
